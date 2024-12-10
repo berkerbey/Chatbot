@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF Yükleme</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>PDF Yükleme</h1>
+    </header>
+    <main>
+        <form id="uploadForm" action="/upload" method="POST" enctype="multipart/form-data">
+            <label for="file">PDF Seç:</label>
+            <input type="file" id="file" name="file" required>
+            <input type="hidden" name="user_id" value="1"> <!-- Kullanıcı ID -->
+            <button type="submit">Yükle</button>
+        </form>
+        <div id="popup" class="hidden"></div>
+    </main>
+    <script src="/static/js/scripts.js"></script>
+</body>
+</html>

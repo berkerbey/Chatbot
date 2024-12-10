@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF İşleme ve Sorgulama</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>PDF İşleme ve Sorgulama</h1>
+    </header>
+    <main>
+        <section id="fileList">
+            <h2>Yüklenen Dosyalar:</h2>
+            <ul id="files">
+                <!-- Dosya listesi burada yüklenecek -->
+            </ul>
+        </section>
+
+        <section id="chatSection" style="display: none;">
+            <h2>Chatbot ile Sohbet</h2>
+            <textarea id="question" rows="4" placeholder="Sormak istediğiniz soruyu yazın..."></textarea>
+            <button id="askButton">Soru Sor</button>
+            <div id="answer"></div>
+        </section>
+    </main>
+    <script src="/static/js/scripts.js"></script>
+</body>
+</html>
