@@ -1,0 +1,8 @@
+flask
+langchain
+openai
+pypdf2
+faiss-cpu
+gradio
+streamlit
+sqlalchemy
